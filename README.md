@@ -16,7 +16,7 @@ h_threshold : humidity threshold, will send out a message if over this limit
 
 ### Prerequisites
 
-Software: Arduino IDE, CH34x driver (optional), a telegram bot
+Software: Arduino IDE, CH34x driver (optional), a telegram bot  
 Hardware: ESP8266 NodeMCU, DHT11, Power Bank with 5V USB output
 
 ### Wiring
