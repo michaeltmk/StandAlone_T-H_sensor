@@ -9,6 +9,8 @@
 #include <WiFiClient.h>
 #include <WiFiClientSecureBearSSL.h>
 
+// set id for sensor
+const int id = 1;
 
 // Replace with your network credentials
 const char* ssid = "XXX";
@@ -71,7 +73,7 @@ void loop() {
     char h_str[8];
     sprintf(t_str, "%2.2f", t);
     sprintf(h_str, "%2.2f", h);
-    text = String("SomeThing Wrong! Temp: ") + t_str + "; RH: " + h_str;
+    text = String("SomeThing Wrong in sensor ") + id + " ! Temp: " + t_str + "; RH: " + h_str;
 
     // Connect to Wi-Fi
     WiFi.begin(ssid, password);
